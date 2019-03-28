@@ -88,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
      * AndroidManifest中设置Activity的属性android:configChanges="orientation|keyboardHidden|screenSize"
      * configChanges只有同时添加这三个属性，才会保持Activity的生命周期的状态
      * 添加orientation这个属性才会onConfigurationChanged回调
+     * Activity中 mFragments.dispatchConfigurationChanged(newConfig);
+     * 实质上主要是 Activity 中收到 AMS 的通知，回调，然后把事件分发到 Window、Fragment、ActionBar 等。
      * @param newConfig
      */
     @Override
