@@ -1,5 +1,6 @@
 # ActivityDemo
 activity的生命周期和启动模式
+屏幕旋转activity的生命周期变化
 
 Activity的启动模式
   * standard
